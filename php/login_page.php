@@ -6,20 +6,19 @@
             $input_pwd=$_POST['pwd'];
             if($input_user=='admin' && $input_pwd=='1234'){
                 $_SESSION["uname"]=$input_user;
-                header("Location:home.html");
+                header("Location:welcome.php");
                 exit();
             }
             else{
                 ($errorMessage="Incorrect username or password");
-            }
-        
+            }      
         }
         else{
             ($errorMessage="Enter username and password");
         }
     }
     
-    ?>
+?>
 <!DOCTYPE html>
 <html >
 <body>
