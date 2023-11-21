@@ -45,7 +45,7 @@
                 }
             }
             else{
-
+                $conn->close();
             }
         ?>
         <p>Enter the name to update</p>
