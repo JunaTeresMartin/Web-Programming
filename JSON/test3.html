@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JSON Object</title>
+</head>
+<body>
+    <h2>Accessing JSON using javascript</h2>
+    <script>
+        var myObj={
+            "name":"James Bond",
+            "age":44,
+            "city":"New York",
+            "cars":{"car1":"Ford","car2":"BMW","car3":"Fiat"},
+            
+        };
+        for (var key in myObj){
+            if(myObj.hasOwnProperty(key)){
+                var properyValue = myObj[key];
+                if(typeof properyValue === 'object' && properyValue !== null){
+                    for (var nestedKey in properyValue){
+                        if (properyValue.hasOwnProperty(nestedKey)){
+                            document.writeln(key + "." + nestedKey + "=" + properyValue[nestedKey]+"<br/>");
+                        }
+                    }
+                }
+                else{
+                    document.writeln(key + "="+ properyValue + "<br>");
+                }
+            }  
+        }
+    </script>
+</body>
+</html>
