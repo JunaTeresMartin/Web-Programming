@@ -7,8 +7,8 @@
 </head>
 <body>
     <h2>Accessing JSON using javascript</h2>
+    <p id="demo"></p>
     <script>
-        <p id="demo"></p>
         var myObj={"name":"James Bond","age":44,"city":"New York","Hobbies":["Investigations","Shooting","Fighting"]};
         var myObj2={"name":"James Bond","age":44,"city":{"car1":"Ford","car2":"BMW"}};
         document.getElementById("demo").innerHTML=myObj.name+"<br>"+myObj.age+"<br>"+myObj.city+"<br>"+myObj.Hobbies;
