@@ -10,7 +10,7 @@
     ?>
     <div class="content">
         <h2>Welcome to My Website www.juna.com</h2>
-        <p><img src="images/sjc.jpeg" width="500"/></p>
+        <p><img src="sjc.jpeg" width="500"/></p>
     </div>
 </body>
 </html>
